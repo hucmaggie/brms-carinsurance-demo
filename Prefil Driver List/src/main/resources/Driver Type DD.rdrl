@@ -11,6 +11,5 @@ rule "Driver Type DD"
 	then
 		Rating fact0 = new Rating();
 		fact0.setRating( 12 );
-		fact0.setDriver( $d );
 		insert( fact0 );
 end
