@@ -9,6 +9,6 @@ rule "Calculate Driver Age"
 		$driver : Driver( age == null , $dob : dateOfBirth != null )
 	then
 		modify( $driver ) {
-				setAge( =DateUtil.calculateNumberOfYears(dob, new Date()) )
+				setAge( = com.redhat.poc.utils.date.DateUtil.calculateNumberOfYears(dob, new Date()) )
 		}
 end
