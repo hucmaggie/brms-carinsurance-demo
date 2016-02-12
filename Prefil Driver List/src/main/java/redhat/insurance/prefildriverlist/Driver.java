@@ -21,7 +21,7 @@ public class Driver implements java.io.Serializable
    @org.kie.api.definition.type.Label("Age")
    private java.lang.Integer age;
    @org.kie.api.definition.type.Label("Rating")
-   private int rating;
+   private Integer rating;
 
    @org.kie.api.definition.type.Label("DLN Provided?")
    private boolean dlnProvided;
@@ -73,16 +73,6 @@ public class Driver implements java.io.Serializable
       this.age = age;
    }
 
-   public int getRating()
-   {
-      return this.rating;
-   }
-
-   public void setRating(int rating)
-   {
-      this.rating = rating;
-   }
-
    public java.lang.String getDateOfBirth()
    {
       return this.dateOfBirth;
@@ -113,9 +103,19 @@ public class Driver implements java.io.Serializable
       this.dobProvided = dobProvided;
    }
 
+   public java.lang.Integer getRating()
+   {
+      return this.rating;
+   }
+
+   public void setRating(java.lang.Integer rating)
+   {
+      this.rating = rating;
+   }
+
    public Driver(java.lang.String name, java.lang.String driverLicenseNumber,
          java.lang.String dateOfBirth, boolean duplicate, java.lang.Integer age,
-         int rating, boolean dlnProvided, boolean dobProvided)
+         java.lang.Integer rating, boolean dlnProvided, boolean dobProvided)
    {
       this.name = name;
       this.driverLicenseNumber = driverLicenseNumber;
