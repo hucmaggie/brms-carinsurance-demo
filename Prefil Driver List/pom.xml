@@ -6,6 +6,13 @@
   <artifactId>PrefilDriverList</artifactId>
   <version>1.0.0</version>
   <name>Prefil Driver List</name>
+  <dependencies>
+    <dependency>
+      <groupId>com.redhat.poc.utils</groupId>
+      <artifactId>date</artifactId>
+      <version>1.0</version>
+    </dependency>
+  </dependencies>
   <build>
     <plugins>
       <plugin>
