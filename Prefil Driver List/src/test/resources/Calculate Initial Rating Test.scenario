@@ -90,14 +90,19 @@
       <name>$d4</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>14</executionTimeResult>
+      <numberOfRulesFired>4</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>rating</fieldName>
           <expected>12</expected>
+          <successResult>true</successResult>
+          <explanation>[$d1] field [rating] was [12].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>$d1</name>
@@ -108,8 +113,10 @@
         <expect-field>
           <fieldName>rating</fieldName>
           <expected>8</expected>
+          <successResult>true</successResult>
+          <explanation>[$d2] field [rating] was [8].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>$d2</name>
@@ -120,8 +127,10 @@
         <expect-field>
           <fieldName>rating</fieldName>
           <expected>4</expected>
+          <successResult>true</successResult>
+          <explanation>[$d3] field [rating] was [4].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>$d3</name>
@@ -131,15 +140,19 @@
       <fieldValues>
         <expect-field>
           <fieldName>rating</fieldName>
-          <expected></expected>
+          <expected>0</expected>
+          <actualResult>0</actualResult>
+          <successResult>true</successResult>
+          <explanation>[$d4] field [rating] was [0].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>$d4</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2016-02-12 20:24:38.720 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
