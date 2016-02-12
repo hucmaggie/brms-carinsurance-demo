@@ -23,24 +23,12 @@
       <name>$d1</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
-    <expect-rule>
-      <ruleName>Driver Type DD</ruleName>
-      <expectedCount>1</expectedCount>
-    </expect-rule>
-    <expect-fact>
-      <fieldValues>
-        <expect-field>
-          <fieldName>rating</fieldName>
-          <expected>18</expected>
-          <operator>==</operator>
-          <nature>0</nature>
-        </expect-field>
-      </fieldValues>
-      <name>$d1</name>
-      <anonymous>false</anonymous>
-    </expect-fact>
+    <execution-trace>
+      <executionTimeResult>2142</executionTimeResult>
+      <numberOfRulesFired>100000</numberOfRulesFired>
+    </execution-trace>
   </fixtures>
+  <lastRunResult>2016-02-12 20:59:37.486 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
@@ -48,6 +36,9 @@
     <imports>
       <org.drools.workbench.models.datamodel.imports.Import>
         <type>redhat.insurance.prefildriverlist.Driver</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>redhat.insurance.prefildriverlist.Rating</type>
       </org.drools.workbench.models.datamodel.imports.Import>
     </imports>
   </imports>
