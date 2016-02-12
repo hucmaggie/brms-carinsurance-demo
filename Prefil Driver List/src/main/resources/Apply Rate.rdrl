@@ -6,5 +6,11 @@ rule "Apply Rate"
 	dialect "mvel"
 	ruleflow-group "calcFinalRate"
 	when
+		$d : Driver( $rating : rating)
+		$r : Rating( driver == $d , $rRating : rating)
 	then
+		modify( $d ) {
+				setRating( $rating + $rRating )
+		}
+		retract( $r );
 end
