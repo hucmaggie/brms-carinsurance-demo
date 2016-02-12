@@ -1,7 +1,10 @@
 import java.lang.Number;
+import redhat.insurance.prefildriverlist.Driver;
+import redhat.insurance.prefildriverlist.Rating;
 
 rule "Apply Rate"
 	dialect "mvel"
+	ruleflow-group "calcFinalRate"
 	when
 	then
 end
