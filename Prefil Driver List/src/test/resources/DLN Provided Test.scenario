@@ -17,6 +17,11 @@
           <value>M1234</value>
           <nature>4</nature>
         </field-data>
+        <field-data>
+          <name>dlnProvided</name>
+          <value>false</value>
+          <nature>1</nature>
+        </field-data>
       </fieldData>
       <name>$d1</name>
       <isModify>false</isModify>
@@ -29,21 +34,37 @@
         </field-data>
         <field-data>
           <name>driverLicenseNumber</name>
+          <value>T4321</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>dlnProvided</name>
+          <value>true</value>
+          <nature>1</nature>
         </field-data>
       </fieldData>
       <name>$d2</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>25</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
       <ruleName>DLN Provided</ruleName>
       <expectedCount>1</expectedCount>
+      <explanation>Rule [DLN Provided] activated 1 times.</explanation>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>dobProvided</fieldName>
-          <expected></expected>
+          <expected>true</expected>
+          <actualResult>false</actualResult>
+          <successResult>false</successResult>
+          <explanation>[$d1] field [dobProvided] was [false] expected [true].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -52,7 +73,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-02-12 18:56:37.831 UTC</lastRunResult>
+  <lastRunResult>2016-02-12 18:59:54.467 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
