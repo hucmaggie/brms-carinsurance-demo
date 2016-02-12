@@ -35,6 +35,22 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace/>
+    <expect-rule>
+      <ruleName>DLN Provided</ruleName>
+      <expectedCount>1</expectedCount>
+    </expect-rule>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>dobProvided</fieldName>
+          <expected></expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>$d1</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
   <lastRunResult>2016-02-12 18:56:37.831 UTC</lastRunResult>
   <rules/>
