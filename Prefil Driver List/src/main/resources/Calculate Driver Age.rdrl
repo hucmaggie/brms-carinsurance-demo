@@ -2,6 +2,8 @@ import java.lang.Number;
 
 rule "Calculate Driver Age"
 	dialect "mvel"
+	no-loop true
+	ruleflow-group "calcAge"
 	when
 	then
 end
