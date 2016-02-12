@@ -6,5 +6,9 @@ rule "Calculate Driver Age"
 	no-loop true
 	ruleflow-group "calcAge"
 	when
+		$driver : Driver( age == null , $dob : dateOfBirth != null )
 	then
+		modify( $driver ) {
+				setAge( =DateUtil.calculateNumberOfYears(dob, new Date()) )
+		}
 end
