@@ -1,7 +1,14 @@
 import java.lang.Number;
+import redhat.insurance.prefildriverlist.Driver;
 
 rule "DLN Provided"
 	dialect "mvel"
+	no-loop true
+	ruleflow-group "initData"
 	when
+		$driver : Driver( dlnProvided == false , driverLicenseNumber != null )
 	then
+		modify( $driver ) {
+				setDlnProvided( true )
+		}
 end
