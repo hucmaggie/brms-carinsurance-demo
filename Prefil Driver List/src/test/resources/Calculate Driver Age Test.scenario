@@ -54,7 +54,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>13</executionTimeResult>
+      <executionTimeResult>7</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -99,8 +99,15 @@
       <name>$d3</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-rule>
+      <ruleName>Calculate Driver Age</ruleName>
+      <expectedCount>1</expectedCount>
+      <explanation>Rule [Calculate Driver Age] activated 1 times.</explanation>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
+    </expect-rule>
   </fixtures>
-  <lastRunResult>2016-02-12 17:58:33.730 UTC</lastRunResult>
+  <lastRunResult>2016-02-12 17:58:59.704 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
