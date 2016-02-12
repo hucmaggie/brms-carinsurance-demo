@@ -47,7 +47,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>25</executionTimeResult>
+      <executionTimeResult>26</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -60,11 +60,10 @@
     <expect-fact>
       <fieldValues>
         <expect-field>
-          <fieldName>dobProvided</fieldName>
+          <fieldName>dlnProvided</fieldName>
           <expected>true</expected>
-          <actualResult>false</actualResult>
-          <successResult>false</successResult>
-          <explanation>[$d1] field [dobProvided] was [false] expected [true].</explanation>
+          <successResult>true</successResult>
+          <explanation>[$d1] field [dlnProvided] was [true].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -73,7 +72,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-02-12 18:59:54.467 UTC</lastRunResult>
+  <lastRunResult>2016-02-12 19:01:17.891 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
