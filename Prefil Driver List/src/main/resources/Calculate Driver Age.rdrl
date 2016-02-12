@@ -4,7 +4,7 @@ import redhat.insurance.prefildriverlist.Driver;
 rule "Calculate Driver Age"
 	dialect "java"
 	no-loop true
-	ruleflow-group "calcAge"
+	ruleflow-group "initData"
 	when
 		$driver : Driver( age == null , $dob : dateOfBirth != null )
 	then
