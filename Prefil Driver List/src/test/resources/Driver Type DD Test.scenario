@@ -19,14 +19,14 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>96</executionTimeResult>
-      <numberOfRulesFired>3</numberOfRulesFired>
+      <executionTimeResult>103</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>rating</fieldName>
-          <expected>18</expected>
+          <expected>12</expected>
           <actualResult>12</actualResult>
           <successResult>false</successResult>
           <explanation>[Rating] field [rating] was [12] expected [18].</explanation>
@@ -38,7 +38,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-02-12 22:06:45.938 UTC</lastRunResult>
+  <lastRunResult>2016-02-12 22:10:41.869 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
