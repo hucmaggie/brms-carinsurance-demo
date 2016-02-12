@@ -6,9 +6,9 @@ rule "DLN Provided"
 	no-loop true
 	ruleflow-group "initData"
 	when
-		$driver : Driver( dlnProvided == false , driverLicenseNumber != null )
+		$driver : Driver( dobProvided == false , dateOfBirth != null )
 	then
 		modify( $driver ) {
-				setDlnProvided( true )
+				setDobProvided( true )
 		}
 end
