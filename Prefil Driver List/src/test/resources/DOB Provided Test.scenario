@@ -41,14 +41,16 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>31</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>15</executionTimeResult>
+      <numberOfRulesFired>3</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>dobProvided</fieldName>
           <expected>true</expected>
+          <successResult>true</successResult>
+          <explanation>[$d1] field [dobProvided] was [true].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -59,9 +61,12 @@
     <expect-rule>
       <ruleName>DOB Provided</ruleName>
       <expectedCount>1</expectedCount>
+      <explanation>Rule [DOB Provided] activated 1 times.</explanation>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-02-12 19:19:24.999 UTC</lastRunResult>
+  <lastRunResult>2016-02-12 19:21:29.717 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
