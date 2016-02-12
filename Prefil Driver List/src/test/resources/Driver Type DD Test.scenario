@@ -10,11 +10,6 @@
       <type>Driver</type>
       <fieldData>
         <field-data>
-          <name>rating</name>
-          <value>10</value>
-          <nature>4</nature>
-        </field-data>
-        <field-data>
           <name>type</name>
           <value>DD</value>
           <nature>4</nature>
@@ -24,23 +19,26 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>2142</executionTimeResult>
-      <numberOfRulesFired>100000</numberOfRulesFired>
+      <executionTimeResult>96</executionTimeResult>
+      <numberOfRulesFired>3</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>rating</fieldName>
           <expected>18</expected>
+          <actualResult>12</actualResult>
+          <successResult>false</successResult>
+          <explanation>[Rating] field [rating] was [12] expected [18].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>Rating</name>
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-02-12 20:59:37.486 UTC</lastRunResult>
+  <lastRunResult>2016-02-12 22:06:45.938 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
