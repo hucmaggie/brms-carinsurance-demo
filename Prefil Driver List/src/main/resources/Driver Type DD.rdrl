@@ -1,7 +1,14 @@
 import java.lang.Number;
+import redhat.insurance.prefildriverlist.Driver;
 
 rule "Driver Type DD"
 	dialect "mvel"
+	no-loop true
+	ruleflow-group "ratingRules"
 	when
+		$d : Driver( type == "DD" , $rating : rating != null )
 	then
+		modify( $d ) {
+				setRating( $rating + 12 )
+		}
 end
