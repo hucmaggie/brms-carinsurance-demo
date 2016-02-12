@@ -1,7 +1,7 @@
 import java.lang.Number;
 import redhat.insurance.prefildriverlist.Driver;
 
-rule "DLN Provided"
+rule "DOB Provided"
 	dialect "mvel"
 	no-loop true
 	ruleflow-group "initData"
