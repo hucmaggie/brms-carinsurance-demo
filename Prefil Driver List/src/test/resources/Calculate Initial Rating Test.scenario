@@ -91,7 +91,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>14</executionTimeResult>
+      <executionTimeResult>42</executionTimeResult>
       <numberOfRulesFired>4</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -99,8 +99,9 @@
         <expect-field>
           <fieldName>rating</fieldName>
           <expected>12</expected>
-          <successResult>true</successResult>
-          <explanation>[$d1] field [rating] was [12].</explanation>
+          <actualResult>12</actualResult>
+          <successResult>false</successResult>
+          <explanation>[$d1] field [rating] was [12] expected [120].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -152,7 +153,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-02-12 20:24:38.720 UTC</lastRunResult>
+  <lastRunResult>2016-02-12 22:34:12.300 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
