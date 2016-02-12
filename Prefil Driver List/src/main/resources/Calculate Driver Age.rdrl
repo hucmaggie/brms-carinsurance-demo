@@ -2,13 +2,13 @@ import java.lang.Number;
 import redhat.insurance.prefildriverlist.Driver;
 
 rule "Calculate Driver Age"
-	dialect "mvel"
+	dialect "java"
 	no-loop true
 	ruleflow-group "calcAge"
 	when
 		$driver : Driver( age == null , $dob : dateOfBirth != null )
 	then
 		modify( $driver ) {
-				setAge( = com.redhat.poc.utils.date.DateUtil.calculateNumberOfYears(dob, new Date()) )
+				setAge( com.redhat.poc.utils.date.DateUtil.calculateNumberOfYears(com.redhat.poc.utils.date.DateUtil.convertStrDate($dob), new java.util.Date()) )
 		}
 end
