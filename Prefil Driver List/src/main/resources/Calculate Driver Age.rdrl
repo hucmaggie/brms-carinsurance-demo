@@ -1,4 +1,5 @@
 import java.lang.Number;
+import redhat.insurance.prefildriverlist.Driver;
 
 rule "Calculate Driver Age"
 	dialect "mvel"
