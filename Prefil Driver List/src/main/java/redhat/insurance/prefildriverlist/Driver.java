@@ -10,17 +10,17 @@ public class Driver implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Name")
+   @org.kie.api.definition.type.Label("Name")
    private java.lang.String name;
-   @org.kie.api.definition.type.Label(value = "Driver License Number")
+   @org.kie.api.definition.type.Label("Driver License Number")
    private java.lang.String driverLicenseNumber;
-   @org.kie.api.definition.type.Label(value = "Date of Birth")
-   private java.util.Date dateOfBirth;
-   @org.kie.api.definition.type.Label(value = "Duplicate?")
+   @org.kie.api.definition.type.Label("Date of Birth")
+   private String dateOfBirth;
+   @org.kie.api.definition.type.Label("Duplicate?")
    private boolean duplicate;
-   @org.kie.api.definition.type.Label(value = "Age")
+   @org.kie.api.definition.type.Label("Age")
    private java.lang.Integer age;
-   @org.kie.api.definition.type.Label(value = "Rating")
+   @org.kie.api.definition.type.Label("Rating")
    private int rating;
 
    public Driver()
@@ -45,16 +45,6 @@ public class Driver implements java.io.Serializable
    public void setDriverLicenseNumber(java.lang.String driverLicenseNumber)
    {
       this.driverLicenseNumber = driverLicenseNumber;
-   }
-
-   public java.util.Date getDateOfBirth()
-   {
-      return this.dateOfBirth;
-   }
-
-   public void setDateOfBirth(java.util.Date dateOfBirth)
-   {
-      this.dateOfBirth = dateOfBirth;
    }
 
    public boolean isDuplicate()
@@ -87,9 +77,19 @@ public class Driver implements java.io.Serializable
       this.rating = rating;
    }
 
+   public java.lang.String getDateOfBirth()
+   {
+      return this.dateOfBirth;
+   }
+
+   public void setDateOfBirth(java.lang.String dateOfBirth)
+   {
+      this.dateOfBirth = dateOfBirth;
+   }
+
    public Driver(java.lang.String name, java.lang.String driverLicenseNumber,
-         java.util.Date dateOfBirth, boolean duplicate,
-         java.lang.Integer age, int rating)
+         java.lang.String dateOfBirth, boolean duplicate, java.lang.Integer age,
+         int rating)
    {
       this.name = name;
       this.driverLicenseNumber = driverLicenseNumber;
