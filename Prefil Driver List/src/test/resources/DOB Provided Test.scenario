@@ -1,5 +1,5 @@
 <scenario>
-  <name>DLN Provided Test.scenario</name>
+  <name>DOB Provided Test.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -10,15 +10,12 @@
       <type>Driver</type>
       <fieldData>
         <field-data>
-          <name>driverLicenseNumber</name>
-        </field-data>
-        <field-data>
-          <name>driverLicenseNumber</name>
-          <value>M1234</value>
+          <name>dateOfBirth</name>
+          <value>7/21/1980</value>
           <nature>4</nature>
         </field-data>
         <field-data>
-          <name>dlnProvided</name>
+          <name>dobProvided</name>
           <value>false</value>
           <nature>1</nature>
         </field-data>
@@ -30,15 +27,12 @@
       <type>Driver</type>
       <fieldData>
         <field-data>
-          <name>driverLicenseNumber</name>
-        </field-data>
-        <field-data>
-          <name>driverLicenseNumber</name>
-          <value>T4321</value>
+          <name>dateOfBirth</name>
+          <value>7/21/1980</value>
           <nature>4</nature>
         </field-data>
         <field-data>
-          <name>dlnProvided</name>
+          <name>dobProvided</name>
           <value>true</value>
           <nature>1</nature>
         </field-data>
@@ -47,23 +41,14 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>26</executionTimeResult>
+      <executionTimeResult>31</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
-    <expect-rule>
-      <ruleName>DLN Provided</ruleName>
-      <expectedCount>1</expectedCount>
-      <explanation>Rule [DLN Provided] activated 1 times.</explanation>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
-    </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
-          <fieldName>dlnProvided</fieldName>
+          <fieldName>dobProvided</fieldName>
           <expected>true</expected>
-          <successResult>true</successResult>
-          <explanation>[$d1] field [dlnProvided] was [true].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -71,8 +56,12 @@
       <name>$d1</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-rule>
+      <ruleName>DOB Provided</ruleName>
+      <expectedCount>1</expectedCount>
+    </expect-rule>
   </fixtures>
-  <lastRunResult>2016-02-12 19:01:17.891 UTC</lastRunResult>
+  <lastRunResult>2016-02-12 19:19:24.999 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
