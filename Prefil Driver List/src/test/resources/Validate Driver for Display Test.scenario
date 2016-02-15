@@ -13,8 +13,6 @@
         </field-data>
         <field-data>
           <name>age</name>
-          <value>35</value>
-          <nature>4</nature>
         </field-data>
       </fieldData>
       <name>$driver1</name>
