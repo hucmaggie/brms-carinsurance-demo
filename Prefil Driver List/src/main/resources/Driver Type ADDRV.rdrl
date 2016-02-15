@@ -7,10 +7,10 @@ rule "Driver Type ADDRV"
 	no-loop true
 	ruleflow-group "ratingRules"
 	when
-		$d : Driver( type == "DD" , $rating : rating != null )
+		$d : Driver( type == "ADDRV" , $rating : rating != null )
 	then
 		Rating fact0 = new Rating();
-		fact0.setRating( 12 );
+		fact0.setRating( 8 );
 		fact0.setDriver( $d );
 		insert( fact0 );
 end
