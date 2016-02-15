@@ -1,13 +1,72 @@
 <scenario>
-  <name>Validate Driver for Display Test</name>
+  <name>Validate Driver for Display Test.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
-  <fixtures/>
+  <fixtures>
+    <fact-data>
+      <type>Driver</type>
+      <fieldData>
+        <field-data>
+          <name>dateOfBirth</name>
+          <value></value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>age</name>
+          <value></value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>$driver1</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>Driver</type>
+      <fieldData>
+        <field-data>
+          <name>dateOfBirth</name>
+          <value>08/07/2004</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>age</name>
+          <value>11</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>$driver2</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>Driver</type>
+      <fieldData>
+        <field-data>
+          <name>dateOfBirth</name>
+          <value>12/25/1980</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>age</name>
+          <value>35</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>$driver3</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <execution-trace/>
+  </fixtures>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
   <imports>
-    <imports/>
+    <imports>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>redhat.insurance.prefildriverlist.Driver</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+    </imports>
   </imports>
-  <ksessions/>
+  <ksessions>
+    <string>defaultKieSession</string>
+  </ksessions>
 </scenario>
