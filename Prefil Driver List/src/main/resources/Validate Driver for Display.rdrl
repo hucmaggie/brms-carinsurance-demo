@@ -1,7 +1,12 @@
 import java.lang.Number;
+import redhat.insurance.prefildriverlist.Driver;
 
 rule "Validate Driver for Display"
 	dialect "mvel"
 	when
+		$driver : Driver( dateOfBirth == null && ( dateOfBirth != null && age >= 15 ))
 	then
+		modify( $driver ) {
+				setDisplayed( true )
+		}
 end
