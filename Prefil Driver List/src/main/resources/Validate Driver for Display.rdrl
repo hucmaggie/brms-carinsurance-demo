@@ -3,6 +3,8 @@ import redhat.insurance.prefildriverlist.Driver;
 
 rule "Validate Driver for Display"
 	dialect "mvel"
+	no-loop true
+	ruleflow-group "validateDriver"
 	when
 		$driver : Driver( dateOfBirth == null && ( dateOfBirth != null && age >= 15 ))
 	then
