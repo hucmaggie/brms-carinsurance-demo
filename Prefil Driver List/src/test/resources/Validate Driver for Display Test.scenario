@@ -8,12 +8,12 @@
       <fieldData>
         <field-data>
           <name>dateOfBirth</name>
-          <value></value>
+          <value>7/21/1980</value>
           <nature>4</nature>
         </field-data>
         <field-data>
           <name>age</name>
-          <value></value>
+          <value>35</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -58,13 +58,13 @@
       <name>validateDriver</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>24</executionTimeResult>
+      <executionTimeResult>18</executionTimeResult>
       <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Validate Driver for Display</ruleName>
-      <expectedCount>2</expectedCount>
-      <explanation>Rule [Validate Driver for Display] was not activated. Expected it to be activated.</explanation>
+      <expectedCount>1</expectedCount>
+      <explanation>Rule [Validate Driver for Display] activated 0 times. Expected 2 times.</explanation>
       <successResult>false</successResult>
       <actualResult>0</actualResult>
     </expect-rule>
@@ -113,7 +113,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-02-15 21:52:37.635 UTC</lastRunResult>
+  <lastRunResult>2016-02-15 21:52:51.735 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
