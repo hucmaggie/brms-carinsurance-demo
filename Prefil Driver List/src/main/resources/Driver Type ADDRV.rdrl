@@ -1,0 +1,16 @@
+import java.lang.Number;
+import redhat.insurance.prefildriverlist.Driver;
+import redhat.insurance.prefildriverlist.Rating;
+
+rule "Driver Type ADDRV"
+	dialect "mvel"
+	no-loop true
+	ruleflow-group "ratingRules"
+	when
+		$d : Driver( type == "DD" , $rating : rating != null )
+	then
+		Rating fact0 = new Rating();
+		fact0.setRating( 12 );
+		fact0.setDriver( $d );
+		insert( fact0 );
+end
