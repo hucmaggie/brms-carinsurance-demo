@@ -3,6 +3,8 @@ import redhat.insurance.prefildriverlist.Driver;
 
 rule "Set Display Message"
 	dialect "mvel"
+	no-loop true
+	ruleflow-group "setDisplayMessage"
 	when
 		$driver : Driver( displayed == false )
 	then
