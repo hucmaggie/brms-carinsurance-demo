@@ -1,7 +1,12 @@
 import java.lang.Number;
+import redhat.insurance.prefildriverlist.Driver;
 
 rule "Set Display Message"
 	dialect "mvel"
 	when
+		$driver : Driver( displayed == false )
 	then
+		modify( $driver ) {
+				setDisplayMessage( "Date of birth is invalid or Age is less than 15" )
+		}
 end
