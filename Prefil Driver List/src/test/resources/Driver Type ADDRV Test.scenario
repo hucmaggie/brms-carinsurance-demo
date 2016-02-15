@@ -1,5 +1,5 @@
 <scenario>
-  <name>Driver Type DD Test.scenario</name>
+  <name>Driver Type ADDRV Test.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -11,7 +11,7 @@
       <fieldData>
         <field-data>
           <name>type</name>
-          <value>DD</value>
+          <value>ADDRV</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -26,7 +26,7 @@
       <fieldValues>
         <expect-field>
           <fieldName>rating</fieldName>
-          <expected>12</expected>
+          <expected>8</expected>
           <actualResult>12</actualResult>
           <successResult>false</successResult>
           <explanation>[Rating] field [rating] was [12] expected [18].</explanation>
