@@ -63,8 +63,8 @@
     </execution-trace>
     <expect-rule>
       <ruleName>Validate Driver for Display</ruleName>
-      <expectedCount>1</expectedCount>
       <explanation>Rule [Validate Driver for Display] activated 0 times. Expected 1 times.</explanation>
+      <expectedFire>true</expectedFire>
       <successResult>false</successResult>
       <actualResult>0</actualResult>
     </expect-rule>
