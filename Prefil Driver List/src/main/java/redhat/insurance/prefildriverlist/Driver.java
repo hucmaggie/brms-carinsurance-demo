@@ -29,8 +29,14 @@ public class Driver implements java.io.Serializable
    @org.kie.api.definition.type.Label("DOB Provided?")
    private boolean dobProvided;
 
-   @org.kie.api.definition.type.Label(value = "Driver Type")
+   @org.kie.api.definition.type.Label("Driver Type")
    private java.lang.String type;
+
+   @org.kie.api.definition.type.Label(value = "Display Flag")
+   private boolean displayed;
+
+   @org.kie.api.definition.type.Label(value = "Display Message")
+   private java.lang.String displayMessage;
 
    public Driver()
    {
@@ -126,10 +132,31 @@ public class Driver implements java.io.Serializable
       this.type = type;
    }
 
+   public boolean isDisplayed()
+   {
+      return this.displayed;
+   }
+
+   public void setDisplayed(boolean displayed)
+   {
+      this.displayed = displayed;
+   }
+
+   public java.lang.String getDisplayMessage()
+   {
+      return this.displayMessage;
+   }
+
+   public void setDisplayMessage(java.lang.String displayMessage)
+   {
+      this.displayMessage = displayMessage;
+   }
+
    public Driver(java.lang.String name, java.lang.String driverLicenseNumber,
          java.lang.String dateOfBirth, boolean duplicate, java.lang.Integer age,
          java.lang.Integer rating, boolean dlnProvided, boolean dobProvided,
-         java.lang.String type)
+         java.lang.String type, boolean displayed,
+         java.lang.String displayMessage)
    {
       this.name = name;
       this.driverLicenseNumber = driverLicenseNumber;
@@ -140,6 +167,8 @@ public class Driver implements java.io.Serializable
       this.dlnProvided = dlnProvided;
       this.dobProvided = dobProvided;
       this.type = type;
+      this.displayed = displayed;
+      this.displayMessage = displayMessage;
    }
 
 }
