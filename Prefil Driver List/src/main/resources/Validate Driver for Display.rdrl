@@ -1,4 +1,3 @@
-import java.lang.Number;
 import redhat.insurance.prefildriverlist.Driver;
 
 rule "Validate Driver for Display"
