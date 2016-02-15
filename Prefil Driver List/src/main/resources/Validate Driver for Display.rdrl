@@ -1,0 +1,7 @@
+import java.lang.Number;
+
+rule "Validate Driver for Display"
+	dialect "mvel"
+	when
+	then
+end
