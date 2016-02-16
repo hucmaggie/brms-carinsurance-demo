@@ -31,7 +31,7 @@
       <name>setDisplayMessage</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>18</executionTimeResult>
+      <executionTimeResult>16</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -59,8 +59,11 @@
       <fieldValues>
         <expect-field>
           <fieldName>displayMessage</fieldName>
-          <expected></expected>
-          <operator>==</operator>
+          <expected>Date of birth is invalid or Age is less than 15</expected>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[$driver2] field [displayMessage] was [] expected [].</explanation>
+          <operator>!=</operator>
           <nature>0</nature>
         </expect-field>
       </fieldValues>
@@ -68,7 +71,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-02-16 15:10:36.545 UTC</lastRunResult>
+  <lastRunResult>2016-02-16 15:11:24.623 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
