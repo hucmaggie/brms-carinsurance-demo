@@ -54,13 +54,13 @@
       <name>validateDriver</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>16</executionTimeResult>
+      <executionTimeResult>19</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Validate Driver for Display</ruleName>
-      <expectedCount>1</expectedCount>
       <explanation>Rule [Validate Driver for Display] activated 2 times. Expected 1 times.</explanation>
+      <expectedFire>true</expectedFire>
       <successResult>false</successResult>
       <actualResult>2</actualResult>
     </expect-rule>
@@ -109,7 +109,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-02-16 15:01:53.586 UTC</lastRunResult>
+  <lastRunResult>2016-02-16 15:02:31.519 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
