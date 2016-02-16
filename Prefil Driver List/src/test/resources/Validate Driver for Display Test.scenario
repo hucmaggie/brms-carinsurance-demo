@@ -56,21 +56,21 @@
       <name>validateDriver</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>17</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>20</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Validate Driver for Display</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Validate Driver for Display] activated 0 times. Expected 1 times.</explanation>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
+      <explanation>Rule [Validate Driver for Display] activated 1 times.</explanation>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>displayed</fieldName>
-          <expected>false</expected>
+          <expected>true</expected>
           <actualResult>false</actualResult>
           <successResult>true</successResult>
           <explanation>[$driver1] field [displayed] was [false].</explanation>
@@ -99,10 +99,10 @@
       <fieldValues>
         <expect-field>
           <fieldName>displayed</fieldName>
-          <expected>false</expected>
-          <actualResult>false</actualResult>
-          <successResult>true</successResult>
-          <explanation>[$driver3] field [displayed] was [false].</explanation>
+          <expected>true</expected>
+          <actualResult>true</actualResult>
+          <successResult>false</successResult>
+          <explanation>[$driver3] field [displayed] was [true] expected [false].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -111,7 +111,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-02-15 21:58:08.880 UTC</lastRunResult>
+  <lastRunResult>2016-02-16 14:59:16.501 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
