@@ -59,7 +59,7 @@
           <fieldName>displayMessage</fieldName>
           <expected></expected>
           <successResult>true</successResult>
-          <explanation>[$driver1] field [displayMessage] was [Date of birth is invalid or Age is less than 15].</explanation>
+          <explanation>[$driver1] field [displayMessage] was not [].</explanation>
           <operator>!=</operator>
           <nature>1</nature>
         </expect-field>
@@ -74,7 +74,7 @@
           <expected>Date of birth is invalid or Age is less than 15</expected>
           <actualResult></actualResult>
           <successResult>true</successResult>
-          <explanation>[$driver2] field [displayMessage] was not [Date of birth is invalid or Age is less than 15].</explanation>
+          <explanation>[$driver2] field [displayMessage] was [Date of birth is invalid or Age is less than 15].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -82,8 +82,20 @@
       <name>$driver2</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>displayMessage</fieldName>
+          <expected></expected>
+          <operator>!=</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>$driver3</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2016-02-16 15:11:42.888 UTC</lastRunResult>
+  <lastRunResult>2016-02-16 15:12:54.3 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
