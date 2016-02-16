@@ -8,8 +8,6 @@
       <fieldData>
         <field-data>
           <name>dateOfBirth</name>
-          <value></value>
-          <nature>4</nature>
         </field-data>
         <field-data>
           <name>age</name>
@@ -56,7 +54,7 @@
       <name>validateDriver</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>20</executionTimeResult>
+      <executionTimeResult>18</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -72,8 +70,8 @@
           <fieldName>displayed</fieldName>
           <expected>true</expected>
           <actualResult>false</actualResult>
-          <successResult>true</successResult>
-          <explanation>[$driver1] field [displayed] was [false].</explanation>
+          <successResult>false</successResult>
+          <explanation>[$driver1] field [displayed] was [false] expected [true].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -101,8 +99,8 @@
           <fieldName>displayed</fieldName>
           <expected>true</expected>
           <actualResult>true</actualResult>
-          <successResult>false</successResult>
-          <explanation>[$driver3] field [displayed] was [true] expected [false].</explanation>
+          <successResult>true</successResult>
+          <explanation>[$driver3] field [displayed] was [true].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -111,7 +109,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-02-16 14:59:16.501 UTC</lastRunResult>
+  <lastRunResult>2016-02-16 14:59:46.133 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
