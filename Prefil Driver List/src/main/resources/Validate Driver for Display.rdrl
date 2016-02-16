@@ -6,7 +6,7 @@ rule "Validate Driver for Display"
 	no-loop true
 	ruleflow-group "validateDriver"
 	when
-		$driver : Driver( dateOfBirth == null && ( dateOfBirth != null && age >= 15 ))
+		$driver : Driver( dateOfBirth == null || ( dateOfBirth != null && age > 15 ))
 	then
 		modify( $driver ) {
 				setDisplayed( true )
