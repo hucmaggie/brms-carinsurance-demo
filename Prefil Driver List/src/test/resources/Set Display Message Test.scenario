@@ -20,62 +20,41 @@
       <fieldData>
         <field-data>
           <name>displayed</name>
+          <value>true</value>
+          <nature>1</nature>
         </field-data>
       </fieldData>
       <name>$driver2</name>
-      <isModify>false</isModify>
-    </fact-data>
-    <fact-data>
-      <type>Driver</type>
-      <fieldData>
-        <field-data>
-          <name>displayed</name>
-        </field-data>
-      </fieldData>
-      <name>$driver3</name>
       <isModify>false</isModify>
     </fact-data>
     <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
       <name>setDisplayMessage</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>16</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>20</executionTimeResult>
+      <numberOfRulesFired>3</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Set Display Message</ruleName>
-      <explanation>Rule [Set Display Message] was activated 1 times.</explanation>
+      <explanation>Rule [Set Display Message] was activated 3 times.</explanation>
       <expectedFire>true</expectedFire>
       <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <actualResult>3</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>displayMessage</fieldName>
           <expected>Date of birth is invalid or Age is less than 15</expected>
-          <actualResult></actualResult>
-          <successResult>false</successResult>
-          <explanation>[$driver1] field [displayMessage] was [] expected [].</explanation>
           <operator>==</operator>
-          <nature>1</nature>
+          <nature>0</nature>
         </expect-field>
       </fieldValues>
       <name>$driver1</name>
       <anonymous>false</anonymous>
     </expect-fact>
-    <expect-fact>
-      <fieldValues/>
-      <name>$driver2</name>
-      <anonymous>false</anonymous>
-    </expect-fact>
-    <expect-fact>
-      <fieldValues/>
-      <name>$driver3</name>
-      <anonymous>false</anonymous>
-    </expect-fact>
   </fixtures>
-  <lastRunResult>2016-02-16 15:04:20.421 UTC</lastRunResult>
+  <lastRunResult>2016-02-16 15:07:54.929 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
