@@ -43,7 +43,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>16</executionTimeResult>
+      <executionTimeResult>17</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -57,7 +57,7 @@
       <fieldValues>
         <expect-field>
           <fieldName>displayMessage</fieldName>
-          <expected></expected>
+          <expected>Date of birth is invalid or Age is less than 15</expected>
           <successResult>true</successResult>
           <explanation>[$driver1] field [displayMessage] was not [].</explanation>
           <operator>!=</operator>
@@ -86,7 +86,9 @@
       <fieldValues>
         <expect-field>
           <fieldName>displayMessage</fieldName>
-          <expected></expected>
+          <expected>Date of birth is invalid or Age is less than 15</expected>
+          <successResult>true</successResult>
+          <explanation>[$driver3] field [displayMessage] was not [].</explanation>
           <operator>!=</operator>
           <nature>0</nature>
         </expect-field>
@@ -95,7 +97,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-02-16 15:12:54.3 UTC</lastRunResult>
+  <lastRunResult>2016-02-16 15:13:28.92 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
