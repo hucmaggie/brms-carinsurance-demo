@@ -8,13 +8,9 @@
       <fieldData>
         <field-data>
           <name>dateOfBirth</name>
-          <value></value>
-          <nature>4</nature>
         </field-data>
         <field-data>
           <name>age</name>
-          <value></value>
-          <nature>4</nature>
         </field-data>
       </fieldData>
       <name>$driver1</name>
@@ -57,16 +53,25 @@
     <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
       <name>validateDriver</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>19</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
       <ruleName>Validate Driver for Display</ruleName>
-      <expectedCount>1</expectedCount>
+      <explanation>Rule [Validate Driver for Display] activated 2 times. Expected 1 times.</explanation>
+      <expectedFire>true</expectedFire>
+      <successResult>false</successResult>
+      <actualResult>2</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>displayed</fieldName>
           <expected>true</expected>
+          <actualResult>false</actualResult>
+          <successResult>true</successResult>
+          <explanation>[$driver1] field [displayed] was [true].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -79,6 +84,8 @@
         <expect-field>
           <fieldName>displayed</fieldName>
           <expected>false</expected>
+          <successResult>true</successResult>
+          <explanation>[$driver2] field [displayed] was [false].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -91,6 +98,9 @@
         <expect-field>
           <fieldName>displayed</fieldName>
           <expected>true</expected>
+          <actualResult>true</actualResult>
+          <successResult>true</successResult>
+          <explanation>[$driver3] field [displayed] was [true].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -99,6 +109,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2016-02-16 15:02:31.519 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
