@@ -54,15 +54,15 @@
       <name>validateDriver</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>18</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>16</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Validate Driver for Display</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Validate Driver for Display] activated 1 times.</explanation>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <explanation>Rule [Validate Driver for Display] activated 2 times. Expected 1 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>2</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
@@ -70,8 +70,8 @@
           <fieldName>displayed</fieldName>
           <expected>true</expected>
           <actualResult>false</actualResult>
-          <successResult>false</successResult>
-          <explanation>[$driver1] field [displayed] was [false] expected [true].</explanation>
+          <successResult>true</successResult>
+          <explanation>[$driver1] field [displayed] was [true].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -109,7 +109,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-02-16 14:59:46.133 UTC</lastRunResult>
+  <lastRunResult>2016-02-16 15:01:53.586 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
