@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>displayed</name>
-          <value>true</value>
+          <value>false</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
@@ -20,8 +20,6 @@
       <fieldData>
         <field-data>
           <name>displayed</name>
-          <value>false</value>
-          <nature>1</nature>
         </field-data>
       </fieldData>
       <name>$driver2</name>
@@ -32,8 +30,6 @@
       <fieldData>
         <field-data>
           <name>displayed</name>
-          <value>true</value>
-          <nature>1</nature>
         </field-data>
       </fieldData>
       <name>$driver3</name>
@@ -42,48 +38,44 @@
     <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
       <name>setDisplayMessage</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>16</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
       <ruleName>Set Display Message</ruleName>
+      <explanation>Rule [Set Display Message] was activated 1 times.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>displayMessage</fieldName>
-          <expected></expected>
+          <expected>Date of birth is invalid or Age is less than 15</expected>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[$driver1] field [displayMessage] was [] expected [].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>$driver1</name>
       <anonymous>false</anonymous>
     </expect-fact>
     <expect-fact>
-      <fieldValues>
-        <expect-field>
-          <fieldName>displayMessage</fieldName>
-          <expected>Date of birth is invalid or Age is less than 15</expected>
-          <operator>==</operator>
-          <nature>0</nature>
-        </expect-field>
-      </fieldValues>
+      <fieldValues/>
       <name>$driver2</name>
       <anonymous>false</anonymous>
     </expect-fact>
     <expect-fact>
-      <fieldValues>
-        <expect-field>
-          <fieldName>displayMessage</fieldName>
-          <expected></expected>
-          <operator>==</operator>
-          <nature>0</nature>
-        </expect-field>
-      </fieldValues>
+      <fieldValues/>
       <name>$driver3</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2016-02-16 15:04:20.421 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
