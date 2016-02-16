@@ -31,7 +31,7 @@
       <name>setDisplayMessage</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>17</executionTimeResult>
+      <executionTimeResult>20</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -47,7 +47,7 @@
           <fieldName>displayMessage</fieldName>
           <expected>Date of birth is invalid or Age is less than 15</expected>
           <successResult>true</successResult>
-          <explanation>[$driver1] field [displayMessage] was not [Date of birth is invalid or Age is less than 15].</explanation>
+          <explanation>[$driver1] field [displayMessage] was [Date of birth is invalid or Age is less than 15].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -62,7 +62,7 @@
           <expected>Date of birth is invalid or Age is less than 15</expected>
           <actualResult></actualResult>
           <successResult>true</successResult>
-          <explanation>[$driver2] field [displayMessage] was [Date of birth is invalid or Age is less than 15].</explanation>
+          <explanation>[$driver2] field [displayMessage] was not [Date of birth is invalid or Age is less than 15].</explanation>
           <operator>!=</operator>
           <nature>1</nature>
         </expect-field>
@@ -71,7 +71,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-02-16 15:15:07.663 UTC</lastRunResult>
+  <lastRunResult>2016-02-16 15:17:39.584 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
